@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+
+<title>MY FF CONFIG PRO</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+
+margin:0;
+
+background:#080808;
+
+color:white;
+
+font-family:
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Arial;
+
+}
+
+.app{
+
+max-width:520px;
+
+margin:auto;
+
+min-height:100vh;
+
+padding-bottom:90px;
+
+}
+
+header{
+
+padding:28px 20px;
+
+background:#121212;
+
+border-bottom:1px solid #292929;
+
+}
+
+.logo{
+
+font-size:26px;
+
+font-weight:900;
+
+}
+
+.logo span{
+
+color:#ff3b30;
+
+}
+
+.subtitle{
+
+color:#888;
+
+margin-top:5px;
+
+}
+
+main{
+
+padding:18px;
+
+}
+
+.page{
+
+display:none;
+
+}
+
+.page.active{
+
+display:block;
+
+}
+
+.card{
+
+background:#151515;
+
+border:1px solid #292929;
+
+border-radius:20px;
+
+padding:18px;
+
+margin-bottom:15px;
+
+}
+
+.card h2{
+
+margin-top:0;
+
+}
+
+.hero{
+
+padding:22px;
+
+border-radius:20px;
+
+background:
+linear-gradient(
+135deg,
+#301015,
+#111
+);
+
+margin-bottom:15px;
+
+}
+
+.hero h2{
+
+margin:0 0 8px;
+
+}
+
+.hero p{
+
+color:#aaa;
+
+line-height:1.5;
+
+}
+
+.stat-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:12px;
+
+}
+
+.stat{
+
+background:#151515;
+
+border:1px solid #292929;
+
+border-radius:18px;
+
+padding:18px;
+
+}
+
+.stat-number{
+
+font-size:25px;
+
+font-weight:900;
+
+}
+
+.stat-title{
+
+color:#888;
+
+font-size:13px;
+
+margin-top:5px;
+
+}
+
+label{
+
+display:block;
+
+margin-top:16px;
+
+margin-bottom:7px;
+
+color:#ccc;
+
+}
+
+input{
+
+width:100%;
+
+padding:14px;
+
+border-radius:12px;
+
+border:1px solid #333;
+
+background:#0d0d0d;
+
+color:white;
+
+font-size:16px;
+
+}
+
+input[type=range]{
+
+padding:0;
+
+accent-color:#ff3b30;
+
+}
+
+.range-head{
+
+display:flex;
+
+justify-content:
+space-between;
+
+margin-top:16px;
+
+}
+
+.value{
+
+color:#ff5148;
+
+font-weight:bold;
+
+}
+
+button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:12px;
+
+border:0;
+
+border-radius:13px;
+
+font-weight:800;
+
+font-size:15px;
+
+background:#ff3b30;
+
+color:white;
+
+}
+
+.dark{
+
+background:#292929;
+
+}
+
+.danger{
+
+background:#7b2020;
+
+}
+
+.nav{
+
+position:fixed;
+
+bottom:0;
+
+left:50%;
+
+transform:
+translateX(-50%);
+
+width:100%;
+
+max-width:520px;
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+background:#151515;
+
+border-top:1px solid #292929;
+
+padding:8px;
+
+}
+
+.nav button{
+
+background:none;
+
+color:#777;
+
+font-size:11px;
+
+margin:0;
+
+padding:7px 2px;
+
+}
+
+.nav button.active{
+
+color:#ff3b30;
+
+}
+
+.icon{
+
+font-size:21px;
+
+display:block;
+
+margin-bottom:3px;
+
+}
+
+.profile{
+
+background:#0f0f0f;
+
+border:1px solid #292929;
+
+border-radius:15px;
+
+padding:15px;
+
+margin-bottom:10px;
+
+}
+
+.profile-name{
+
+font-weight:800;
+
+font-size:17px;
+
+}
+
+.profile-info{
+
+color:#888;
+
+font-size:12px;
+
+margin-top:5px;
+
+line-height:1.5;
+
+}
+
+.row{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:8px;
+
+}
+
+.message{
+
+text-align:center;
+
+color:#65e69b;
+
+margin-top:10px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+<header>
+
+<div class="logo">
+
+MY <span>FF</span> CONFIG PRO
+
+</div>
+
+<div class="subtitle">
+
+Personal Gaming Configuration
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- DASHBOARD -->
+
+<section
+id="home"
+class="page active">
+
+<div class="hero">
+
+<h2>
+MY FF CONFIG PRO 🎮
+</h2>
+
+<p>
+Quản lý và lưu các bộ cấu hình
+cá nhân trên iPhone.
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat">
+
+<div
+id="count"
+class="stat-number">
+0
+</div>
+
+<div class="stat-title">
+Cấu hình đã lưu
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+5
+</div>
+
+<div class="stat-title">
+Thông số độ nhạy
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+⚡ Truy cập nhanh
+</h2>
+
+<button
+onclick="page('sensitivity')">
+
+🎯 Độ nhạy
+
+</button>
+
+
+<button
+class="dark"
+onclick="page('profiles')">
+
+💾 Cấu hình đã lưu
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- SENSITIVITY -->
+
+<section
+id="sensitivity"
+class="page">
+
+<div class="card">
+
+<h2>
+🎯 Sensitivity
+</h2>
+
+
+<label>
+Tên cấu hình
+</label>
+
+<input
+id="name"
+value="PRO CONFIG">
+
+
+<div class="range-head">
+
+<span>
+General
+</span>
+
+<span
+id="generalText"
+class="value">
+180
+</span>
+
+</div>
+
+<input
+id="general"
+type="range"
+min="0"
+max="200"
+value="180"
+oninput="sync('general')">
+
+
+<div class="range-head">
+
+<span>
+Red Dot
+</span>
+
+<span
+id="redText"
+class="value">
+175
+</span>
+
+</div>
+
+<input
+id="red"
+type="range"
+min="0"
+max="200"
+value="175"
+oninput="sync('red')">
+
+
+<div class="range-head">
+
+<span>
+2X Scope
+</span>
+
+<span
+id="scope2Text"
+class="value">
+165
+</span>
+
+</div>
+
+<input
+id="scope2"
+type="range"
+min="0"
+max="200"
+value="165"
+oninput="sync('scope2')">
+
+
+<div class="range-head">
+
+<span>
+4X Scope
+</span>
+
+<span
+id="scope4Text"
+class="value">
+155
+</span>
+
+</div>
+
+<input
+id="scope4"
+type="range"
+min="0"
+max="200"
+value="155"
+oninput="sync('scope4')">
+
+
+<div class="range-head">
+
+<span>
+Sniper
+</span>
+
+<span
+id="sniperText"
+class="value">
+100
+</span>
+
+</div>
+
+<input
+id="sniper"
+type="range"
+min="0"
+max="200"
+value="100"
+oninput="sync('sniper')">
+
+
+<button
+onclick="save()">
+
+💾 LƯU CẤU HÌNH
+
+</button>
+
+
+<button
+class="dark"
+onclick="resetConfig()">
+
+↩️ ĐẶT LẠI
+
+</button>
+
+
+<div
+id="message"
+class="message">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WEAPONS -->
+
+<section
+id="weapons"
+class="page">
+
+<div class="card">
+
+<h2>
+🔫 Weapon Profiles
+</h2>
+
+<button
+class="dark">
+M1887 — Shotgun
+</button>
+
+<button
+class="dark">
+MP40 — SMG
+</button>
+
+<button
+class="dark">
+UMP — SMG
+</button>
+
+<button
+class="dark">
+SCAR — AR
+</button>
+
+<p
+style="color:#888;
+font-size:13px">
+
+Khu vực này dùng để ghi chú
+cấu hình cá nhân cho từng loại súng.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROFILES -->
+
+<section
+id="profiles"
+class="page">
+
+<div class="card">
+
+<h2>
+💾 Saved Configs
+</h2>
+
+<div
+id="profiles">
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<nav class="nav">
+
+<button
+id="homeNav"
+class="active"
+onclick="page('home')">
+
+<span class="icon">
+🏠
+</span>
+
+Home
+
+</button>
+
+
+<button
+id="sensitivityNav"
+onclick="page('sensitivity')">
+
+<span class="icon">
+🎯
+</span>
+
+Sensitivity
+
+</button>
+
+
+<button
+id="weaponsNav"
+onclick="page('weapons')">
+
+<span class="icon">
+🔫
+</span>
+
+Weapons
+
+</button>
+
+
+<button
+id="profilesNav"
+onclick="page('profiles')">
+
+<span class="icon">
+💾
+</span>
+
+Saved
+
+</button>
+
+</nav>
+
+
+</div>
+
+
+<script>
+
+
+const pages = [
+"home",
+"sensitivity",
+"weapons",
+"profiles"
+];
+
+
+function page(name){
+
+pages.forEach(
+function(item){
+
+document
+.getElementById(item)
+.classList
+.remove("active");
+
+});
+
+
+document
+.getElementById(name)
+.classList
+.add("active");
+
+
+document
+.querySelectorAll(".nav button")
+.forEach(
+function(btn){
+
+btn.classList
+.remove("active");
+
+});
+
+
+document
+.getElementById(
+name+"Nav"
+)
+.classList
+.add("active");
+
+
+if(name==="profiles"){
+
+render();
+
+}
+
+}
+
+
+function sync(id){
+
+document
+.getElementById(
+id+"Text"
+)
+.textContent =
+document
+.getElementById(id)
+.value;
+
+}
+
+
+function save(){
+
+let list =
+JSON.parse(
+localStorage
+.getItem("MY_FF_PRO")
+) || [];
+
+
+let config={
+
+name:
+document
+.getElementById("name")
+.value,
+
+general:
+document
+.getElementById("general")
+.value,
+
+red:
+document
+.getElementById("red")
+.value,
+
+scope2:
+document
+.getElementById("scope2")
+.value,
+
+scope4:
+document
+.getElementById("scope4")
+.value,
+
+sniper:
+document
+.getElementById("sniper")
+.value
+
+};
+
+
+list.push(config);
+
+
+localStorage
+.setItem(
+"MY_FF_PRO",
+JSON.stringify(list)
+);
+
+
+document
+.getElementById("message")
+.textContent =
+"✅ Đã lưu cấu hình!";
+
+
+updateCount();
+
+}
+
+
+function render(){
+
+let list =
+JSON.parse(
+localStorage
+.getItem("MY_FF_PRO")
+) || [];
+
+
+let box =
+document
+.getElementById("profiles");
+
+
+box.innerHTML="";
+
+
+if(list.length===0){
+
+box.innerHTML =
+"<p style='color:#888'>Chưa có cấu hình.</p>";
+
+return;
+
+}
+
+
+list.forEach(
+function(item,index){
+
+let div =
+document
+.createElement("div");
+
+
+div.className="profile";
+
+
+div.innerHTML=
+
+"<div class='profile-name'>"+
+item.name+
+"</div>"+
+
+"<div class='profile-info'>"+
+"General: "+item.general+
+" · Red Dot: "+item.red+
+" · 2X: "+item.scope2+
+" · 4X: "+item.scope4+
+" · Sniper: "+item.sniper+
+"</div>"+
+
+"<div class='row'>"+
+
+"<button class='dark' "+
+"onclick='loadConfig("+index+")'>"+
+"Tải"+
+"</button>"+
+
+"<button class='danger' "+
+"onclick='deleteConfig("+index+")'>"+
+"Xóa"+
+"</button>"+
+
+"</div>";
+
+
+box.appendChild(div);
+
+});
+
+}
+
+
+function loadConfig(index){
+
+let list =
+JSON.parse(
+localStorage
+.getItem("MY_FF_PRO")
+) || [];
+
+
+let item=list[index];
+
+
+document
+.getElementById("name")
+.value=item.name;
+
+
+set("general",item.general);
+set("red",item.red);
+set("scope2",item.scope2);
+set("scope4",item.scope4);
+set("sniper",item.sniper);
+
+
+page("sensitivity");
+
+}
+
+
+function set(id,value){
+
+document
+.getElementById(id)
+.value=value;
+
+sync(id);
+
+}
+
+
+function deleteConfig(index){
+
+let list =
+JSON.parse(
+localStorage
+.getItem("MY_FF_PRO")
+) || [];
+
+
+list.splice(index,1);
+
+
+localStorage
+.setItem(
+"MY_FF_PRO",
+JSON.stringify(list)
+);
+
+
+render();
+
+updateCount();
+
+}
+
+
+function updateCount(){
+
+let list =
+JSON.parse(
+localStorage
+.getItem("MY_FF_PRO")
+) || [];
+
+
+document
+.getElementById("count")
+.textContent=
+list.length;
+
+}
+
+
+function resetConfig(){
+
+document
+.getElementById("name")
+.value="PRO CONFIG";
+
+set("general",180);
+
+set("red",175);
+
+set("scope2",165);
+
+set("scope4",155);
+
+set("sniper",100);
+
+document
+.getElementById("message")
+.textContent="";
+
+}
+
+
+updateCount();
+
+</script>
+
+</body>
+
+</html>
